@@ -8,9 +8,5 @@ Meteor.methods
 
 		response.data.results.map (tt)->
 			user: tt.from_user_name
-			text:tt.text
+			text: tt.text
 
-###			
-		(for  t in response.data.results
-			(t)->	user: t.from_user_name, text:t.text)
-###
