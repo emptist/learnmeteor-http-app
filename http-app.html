@@ -1,0 +1,16 @@
+<head>
+  <title>http-app</title>
+</head>
+
+<body>
+  {{> tslist}}
+</body>
+
+<template name="tslist">
+  <h1>最近时间:{{latestRefresh}}</h1>
+  <ul>
+  {{#each ts}}
+  	<li>{{user}}:{{text}}</li>
+  {{/each}}
+  </ul>
+</template>
