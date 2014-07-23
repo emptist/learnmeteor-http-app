@@ -13,7 +13,6 @@ Meteor.setInterval ->
 			d = new Date
 			Session.set "latestRefresh" ,
 				"#{d.getHours()} : #{d.getMinutes()} : #{d.getSeconds()}"
-			#Session.set "ts", ts
 			
-	6000 
+	3000 
 
